@@ -3,7 +3,7 @@ using CodingBlog.Service.Model;
 
 namespace CodingBlog.Service.Repository
 {
-    public class CodingBlogContext : DbContext
+    internal class CodingBlogContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Blog> Blogs { get; set; }

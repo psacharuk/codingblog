@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingBlog.Service", "Codin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingBlog.UI.Test", "CodingBlog.UI.Test\CodingBlog.UI.Test.csproj", "{5DA433B1-F345-4F21-9891-2C26C4F42945}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingBlog.Service.Test", "CodingBlog.Service.Test\CodingBlog.Service.Test.csproj", "{9C2FCACD-6D92-4DE7-B399-C66114924B21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{69EC3831-0BFC-41DF-B057-7E1EF8DEAE7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,16 @@ Global
 		{5DA433B1-F345-4F21-9891-2C26C4F42945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA433B1-F345-4F21-9891-2C26C4F42945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DA433B1-F345-4F21-9891-2C26C4F42945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2FCACD-6D92-4DE7-B399-C66114924B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2FCACD-6D92-4DE7-B399-C66114924B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2FCACD-6D92-4DE7-B399-C66114924B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2FCACD-6D92-4DE7-B399-C66114924B21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C2FCACD-6D92-4DE7-B399-C66114924B21} = {69EC3831-0BFC-41DF-B057-7E1EF8DEAE7A}
+		{5DA433B1-F345-4F21-9891-2C26C4F42945} = {69EC3831-0BFC-41DF-B057-7E1EF8DEAE7A}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace CodingBlog.UI.Test
 {
     [TestFixture]
-    public class RouteTableTests
+    internal class RouteTableTests
     {
         [Test]
         public void url_when_slash_redirect_to_post_list()

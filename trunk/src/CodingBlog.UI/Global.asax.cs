@@ -1,8 +1,6 @@
-﻿using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
-using CodingBlog.Service.Repository;
 
 namespace CodingBlog.UI
 {
@@ -12,9 +10,6 @@ namespace CodingBlog.UI
     {
         protected void Application_Start()
         {
-            var codingBlogContext = new CodingBlogContext();
-            codingBlogContext.Blogs.Count();
-
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
