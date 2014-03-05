@@ -19,8 +19,23 @@ namespace CodingBlog.Service.Repository
             {
                 context.Blogs.Add(blogToCreate);
                 context.SaveChanges();
+            }
+            return blogToCreate;  
+        }
 
-                return blogToCreate;             
+        public Blog GetBlogById(int blogId)
+        {
+            using (var context = new CodingBlogContext())
+            {
+                return context.Blogs.SingleOrDefault(blog => blog.Id == blogId);
+            }
+        }
+
+        public Blog GetDefaultBlog()
+        {
+            using (var context = new CodingBlogContext())
+            {
+                return context.Blogs.SingleOrDefault();
             }
         }
     }
